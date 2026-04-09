@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-04-07T10:55:20 IST" name="Default suite" finished-at="2026-04-07T10:55:26 IST" duration-ms="5457">
+    <groups>
+    </groups>
+    <test started-at="2026-04-07T10:55:20 IST" name="Default test" finished-at="2026-04-07T10:55:26 IST" duration-ms="5457">
+      <class name="DynamicJSONTest">
+        <test-method signature="addBook(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:DynamicJSONTest@515aebb0]" started-at="2026-04-07T10:55:20 IST" name="addBook" data-provider="BooksData" finished-at="2026-04-07T10:55:25 IST" duration-ms="4524" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sei Samay]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Sunil]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1859]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Sunil Ganguly]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addBook -->
+        <test-method signature="addBook(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:DynamicJSONTest@515aebb0]" started-at="2026-04-07T10:55:25 IST" name="addBook" data-provider="BooksData" finished-at="2026-04-07T10:55:26 IST" duration-ms="838" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Glimpses of World History]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Nehru]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1901]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Jawaharlal Nehru]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addBook -->
+      </class> <!-- DynamicJSONTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
