@@ -31,15 +31,13 @@ public class OAuthTest {
 
 		// Get Course Details from server using the access-token using JsonPath
 
-		/*
-		 * response = given().queryParam("access_token",
-		 * access_token).when().get("oauthapi/getCourseDetails").then()
-		 * .assertThat().statusCode(401).extract().response().asString(); js =
-		 * ReusableMethods.rawToJson(response); String instructor =
-		 * js.getString("instructor"); String url = js.getString("url"); String
-		 * courseTitle = js.getString("courses.webAutomation.courseTitle");
-		 * System.out.println(instructor + " : " + url + " : " + courseTitle);
-		 */
+		response = given().queryParam("access_token", access_token).when().get("oauthapi/getCourseDetails").then()
+				.assertThat().statusCode(401).extract().response().asString();
+		js = ReusableMethods.rawToJson(response);
+		String instructor = js.getString("instructor");
+		String url = js.getString("url");
+		String courseTitle = js.getString("courses.webAutomation.courseTitle");
+		System.out.println(instructor + " : " + url + " : " + courseTitle);
 
 		// Get Course Details from server using the access-token using POJO
 		// DeSerialization

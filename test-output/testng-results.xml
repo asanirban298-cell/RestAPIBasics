@@ -2,32 +2,26 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-10T10:41:02 IST" name="Default suite" finished-at="2026-04-10T10:41:10 IST" duration-ms="7991">
+  <suite started-at="2026-04-24T14:11:07 IST" name="Default suite" finished-at="2026-04-24T14:11:10 IST" duration-ms="3896">
     <groups>
     </groups>
-    <test started-at="2026-04-10T10:41:02 IST" name="Default test" finished-at="2026-04-10T10:41:10 IST" duration-ms="7991">
-      <class name="excelDriven">
-        <test-method signature="addBook()[pri:0, instance:excelDriven@3ba9ad43]" started-at="2026-04-10T10:41:02 IST" name="addBook" finished-at="2026-04-10T10:41:10 IST" duration-ms="7900" status="FAIL">
+    <test started-at="2026-04-24T14:11:07 IST" name="Default test" finished-at="2026-04-24T14:11:10 IST" duration-ms="3896">
+      <class name="ComplexJSONParse">
+        <test-method signature="coursesValidations()[pri:0, instance:ComplexJSONParse@5e82df6a]" started-at="2026-04-24T14:11:07 IST" name="coursesValidations" finished-at="2026-04-24T14:11:10 IST" duration-ms="3797" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[1 expectation failed.
-Expected status code <200> but was <404>.
-]]>
+              <![CDATA[expected [955] but found [910]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: 1 expectation failed.
-Expected status code <200> but was <404>.
-
-at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:516)
-at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:714)
-at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:139)
-at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:147)
-at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-at excelDriven.addBook(excelDriven.java:44)
+              <![CDATA[java.lang.AssertionError: expected [955] but found [910]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1431)
+at org.testng.Assert.assertEquals(Assert.java:1395)
+at org.testng.Assert.assertEquals(Assert.java:1441)
+at ComplexJSONParse.coursesValidations(ComplexJSONParse.java:64)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -59,8 +53,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addBook -->
-      </class> <!-- excelDriven -->
+        </test-method> <!-- coursesValidations -->
+      </class> <!-- ComplexJSONParse -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

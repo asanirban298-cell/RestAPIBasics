@@ -1,3 +1,4 @@
+import org.apache.commons.io.FileUtils;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -6,7 +7,9 @@ import io.restassured.path.json.JsonPath;
 
 import static io.restassured.RestAssured.*;
 
+import java.io.File;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
@@ -21,8 +24,9 @@ public class DynamicJSONTest {
 
 		// Adding the same books from external JSON Books.json file
 		String response = given().header("Content-Type", "application/json")
-				.body(new String(Files.readAllBytes(Paths.get(System.getProperty("user.dir") + "//Books.json")))).when()
-				.post("Library/Addbook.php").then().assertThat().statusCode(200).extract().response().asString();
+				.body(FileUtils.readFileToString(new File(System.getProperty("user.dir") + "//Books.json"),
+						StandardCharsets.UTF_8))
+				.when().post("Library/Addbook.php").then().assertThat().statusCode(200).extract().response().asString();
 
 		JsonPath js = ReusableMethods.rawToJson(response);
 		System.out.println(js.getString("Msg"));

@@ -1,0 +1,13 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:maj="http://majesco.com/policy">
+   <soap:Body>
+      <maj:PolicyResponse>
+         <maj:Status>SUCCESS</maj:Status>
+         <maj:Policy id="POL-999">
+            <maj:Coverages>
+               <maj:Coverage name="Liability">10000</maj:Coverage>
+               <maj:Coverage name="Collision">5000</maj:Coverage>
+            </maj:Coverages>
+         </maj:Policy>
+      </maj:PolicyResponse>
+   </soap:Body>
+</soap:Envelope>

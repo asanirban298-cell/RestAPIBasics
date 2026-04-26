@@ -22,10 +22,10 @@ public class AddPlaceSerial {
 
 		Places plc = new Places();
 		plc.setAccuracy(50);
-		plc.setAddress("30, Portugal layout, New Delhi 6");
-		plc.setLanguage("Spanish");
-		plc.setPhone_number("9999999999");
-		plc.setWebsite("rahulshettyacademy.com");
+		plc.setAddress("30, New Town layout, New Delhi 6");
+		plc.setLanguage("English");
+		plc.setPhone_number("79086999999");
+		plc.setWebsite("anirban.com");
 		plc.setName("Hombre Phoenix");
 		ArrayList<String> myList = new ArrayList<String>();
 		myList.add("shoe park");

@@ -1,0 +1,11 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:maj="http://majesco.com/policy">
+   <soap:Header/>
+   <soap:Body>
+      <maj:PolicyRequest id="POL-999">
+         <maj:Type>Commercial</maj:Type>
+         <maj:PremiumDetails>
+            <maj:Amount>5000</maj:Amount>
+         </maj:PremiumDetails>
+      </maj:PolicyRequest>
+   </soap:Body>
+</soap:Envelope>

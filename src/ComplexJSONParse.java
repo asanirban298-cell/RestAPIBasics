@@ -34,7 +34,7 @@ public class ComplexJSONParse {
 		System.out.println(purchaseAmt);
 
 		// Get and print the title of the first course
-		String firstCourseTitle = jsp.getString("courses.get(0).title");
+		String firstCourseTitle = jsp.getString("courses[0].title");
 		System.out.println(firstCourseTitle);
 
 		// Print the title and price of each course

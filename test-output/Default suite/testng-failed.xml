@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="excelDriven">
+      <class name="ComplexJSONParse">
         <methods>
-          <include name="addBook"/>
+          <include name="coursesValidations"/>
         </methods>
-      </class> <!-- excelDriven -->
+      </class> <!-- ComplexJSONParse -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
